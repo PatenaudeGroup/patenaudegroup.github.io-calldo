@@ -3,6 +3,7 @@
 <title>Callido</title>
 <h1><center><font color=green>Callido</font></center></h1>
 <center><button><h2><a href="http://patenaude.github.io/">Click to go back to the main page!</a></h2></button></center>
+
 <script>
 alert("This is a companion that will talk to you and ask you questions, put all non-proper nouns in lower-case letters")
 var name = prompt("What is your name?")
@@ -32,13 +33,20 @@ alert("Is your number"+' '+number)
 
 var code = prompt("Do you know the secret code?")
 if (code == "17884") {
-alert("Congrats you go the secret code right! Get your 10 Patenaude Dollars!")
+alert("Congrats you go the secret code right! Get your 5 Patenaude Dollars!")
 } else {
 alert("Try looking around all of the pages on this site for the secret code!")
 }
 
-alert("This is it for version 0.0.0.0.3, hope you like it"+' '+name)
-alert("Collected information"+ '= ' +name+ ', ' +age+ ', ' +number)
+var friend = prompt("Please tell at least 1 friend about the site! Who will you tell?")
+if (friend == "everyone") {
+alert("Ok, sure, EVERYONE!")
+} else {
+alert("Thanks for letting them know!!")
+}
+
+alert("This is it for version 0.0.0.0.4, hope you like it"+' '+name)
+alert("Collected information"+ '= ' +name+ ', ' +age+ ', ' +number+ ',' +friend)
 </script>
 </body>
 </html>
